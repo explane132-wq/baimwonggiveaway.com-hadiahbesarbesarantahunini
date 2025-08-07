@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Giveaway Resmi Baim Wong</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" id="home">
+    <img src="baam.jpeg" alt="Giveaway Baim Wong" class="banner" />
+    <h1>🎉 GIVEAWAY RESMI BAIM WONG 🎉</h1>
+    <p>Jawab 5 pertanyaan mudah dan isi data untuk kesempatan menang hadiah!</p>
+    <button class="btn" onclick="startQuiz()">Ikuti Sekarang</button>
+  </main>
+
+  <main class="container hidden" id="quiz">
+    <h2>Jawab Pertanyaan Berikut</h2>
+    <form id="quizForm" novalidate>
+      <div class="form-group">
+        <label for="q1">1. Apakah kamu pernah lihat Baim Wong?</label>
+        <input id="q1" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="q2">2. Sudah follow tiktok Baim Wong?</label>
+        <input id="q2" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="q3">3. untuk apa uang give away kamu gunakan jika menang?</label>
+        <input id="q3" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="q4">4. Apakah kamu bersedia mengikuti syarat giveaway?</label>
+        <input id="q4" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="q5">5. Kenapa kamu layak menerima hadiah ini?</label>
+        <input id="q5" type="text" required />
+      </div>
+      <button type="submit" class="btn">Lanjut Isi Data</button>
+    </form>
+  </main>
+
+  <main class="container hidden" id="form">
+    <h2>Isi Data Kamu</h2>
+    <form id="dataForm" novalidate>
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input id="nama" name="nama" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="hp">No WhatsApp</label>
+        <input id="hp" name="hp" type="tel" required />
+      </div>
+      <div class="form-group">
+        <label for="rekening">No Rekening (opsional)</label>
+        <input id="rekening" name="rekening" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="alamat">Alamat Lengkap</label>
+        <input id="alamat" name="alamat" type="text" required />
+      </div>
+      <button type="submit" class="btn">Kirim Data</button>
+    </form>
+  </main>
+
+  <main class="container hidden" id="success">
+    <h2>✅ Data Terkirim!</h2>
+    <p>Terima kasih sudah berpartisipasi! Silakan hubungi admin via WhatsApp untuk proses lebih lanjut.</p>
+    <a href="https://wa.wizard.id/d9b219" target="_blank" rel="noopener noreferrer" class="btn whatsapp-btn">
+  📱 Hubungi Admin via WhatsApp
+</a>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
